@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.heading
+{
+    /* border: 2px solid black; */
+    text-decoration: underline;
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+}
+.images
+{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin: auto;
+    margin-top: 10vh;
+}
+.image
+{
+    width: 15vw;
+}
+.image:hover
+{
+    transform: scale(1.2);
+}
+.ans
+{
+    width: 20vw;
+    text-align: center;
+    /* border: 2px solid; */
+    font-size: x-large;
+    /* height: 20px; */
+    margin: auto;
+    margin-top: 4vh;
+}
+.score
+{
+    display: flex;
+    gap: 20px;
+    width: 15vw;
+    font-size: large;
+    /* border: 1px solid; */
+    margin: auto;
+    margin-top: 2vh;
+    justify-content: space-between;
+}

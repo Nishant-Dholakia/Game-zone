@@ -1,0 +1,23 @@
+.light
+{
+    background-color: whitesmoke;
+    color: black;
+}
+.dark
+{
+    background-color: black;
+    color: violet;
+}
+.mode
+{
+    padding: 0;
+    width: 5vw;
+    height: 2vh;
+    display: flex;
+    border: 1px solid grey;
+}
+.submode
+{
+    width: 50%;
+    height: 100%;
+}
