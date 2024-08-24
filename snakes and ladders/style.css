@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+body
+{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+}
+.gameName
+{
+    width: 19%;
+    word-break:keep-all;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    position: absolute;
+    left: 5vw;
+    top: 20vh;
+    margin: 10px;
+}
+.gameend
+{
+    width: 19%;
+    word-break:keep-all;
+    position: absolute;
+    left: 5vw;
+    top: 30vh;
+    margin: 10px;
+}
+
+.turn
+{
+    width: 19%;
+    word-break:keep-all;
+    position: absolute;
+    left: 5vw;
+    top: 65vh;
+    margin: 10px;
+    font-size: x-large;
+}
+
+.boardimg
+{
+    /* margin-left: 25%; */
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 3vh;
+    left: 30vw;
+    border: 2px solid black;
+}
+.gridboard
+{
+    border: 1px solid;
+    height: 700px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0px;
+    position: absolute;
+    top: 3vh;
+    left: 30vw;
+    z-index: 1;
+}
+.box
+{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 4px;
+}
+.roller
+{
+    border: 2px solid ;
+    height: 80px;
+    width: 80px;
+    float: left;
+    position: absolute;
+    bottom: 15vh;
+    left: 10vw;
+    transition: transform 1s ease-in-out;
+}
+.dice
+{
+    width: 100%;
+    height: 100%;
+    /* padding: 5px; */
+}
+.player1
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: 2;
+    transition: transform 1s ease-in-out;
+}
+.player2
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    z-index: 2;
+}
+.rotate
+{
+    transform: rotate(720deg) ;
+}
+

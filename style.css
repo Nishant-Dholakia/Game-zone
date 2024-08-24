@@ -1,0 +1,30 @@
+
+.heading
+{
+    width: 19%;
+    margin: auto;
+    margin-top: 10vh;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    color: blue;
+    text-align: center;
+}
+
+.allgames
+{
+    display: flex;
+    gap: 50px;
+    margin: 5vh;
+    justify-content: center;
+}
+
+.game
+{
+    height: 200px;
+    width: 200px;
+}
+
+.game:hover
+{
+    transform: scale(1.2);
+}
