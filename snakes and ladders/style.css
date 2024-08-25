@@ -133,7 +133,7 @@ body
 {
     background-color: lightgreen;
 }
-@media screen and (max-width:500px) {
+@media screen and ((max-width:500px)or( max-height:500px)) {
     .gameName
     {
         top: 8vh;
