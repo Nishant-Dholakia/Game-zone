@@ -1,21 +1,22 @@
 body
 {
-    word-wrap: break-word;
+    word-break: keep-all;
 }
 .rules
 {
-    width: 50vw;
+    width: 70vw;
     margin: auto;
-    font-size: xx-large;
+    font-size: x-large;
 }
 .gamename
 {
     width: 40vw;
     text-decoration: underline;
-text-decoration-color: blueviolet;
-color: blue;
-margin: auto;
-text-align: center;
+    text-decoration-color: blueviolet;
+    color: blue;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
 }
 .main
 {
@@ -27,7 +28,6 @@ text-align: center;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows:repeat(3,1fr);
     gap: 2vmin 2vmin;
-    /* background-color: black; */
 }
 .box
 {
@@ -59,7 +59,8 @@ text-align: center;
     height: 2vh;
     padding: 5px;
     margin: auto;
-    
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 .reset:hover
 {
@@ -67,7 +68,24 @@ text-align: center;
 }
 .result
 {
-    width: 40vw;
+    width: 60vw;
     margin: auto;
     font-size: large;
+}
+@media screen and (max-width:500px) {
+    .rules
+    {
+        font-size: medium;
+        font-weight: 500;
+    }
+    .main
+    {
+        width: 90%;
+        /* height: 100%; */
+    }
+    .gamename
+    {
+        width: 70vw;
+        font-size: larger;
+    }
 }

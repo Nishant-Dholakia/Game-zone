@@ -7,7 +7,9 @@
 {
     /* border: 2px solid black; */
     text-decoration: underline;
-    width: 30vw;
+    text-decoration-color:blueviolet ;
+    color: blue;
+    width: 50vw;
     text-align: center;
     margin: auto;
     margin-top: 10vh;
@@ -30,10 +32,10 @@
 }
 .ans
 {
-    width: 20vw;
+    width: 40vw;
     text-align: center;
     /* border: 2px solid; */
-    font-size: x-large;
+    font-size: larger;
     /* height: 20px; */
     margin: auto;
     margin-top: 4vh;
@@ -42,10 +44,24 @@
 {
     display: flex;
     gap: 20px;
-    width: 15vw;
+    width: 50vw;
     font-size: large;
     /* border: 1px solid; */
     margin: auto;
     margin-top: 2vh;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:500px) {
+    .ans
+    {
+        font-size: medium;
+        width: 70vw;
+    }
+    .score
+    {
+        display: block;
+        border: 1px solid;
+        text-align: center;
+        width: 70vw;
+    }
 }

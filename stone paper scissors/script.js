@@ -26,12 +26,12 @@ for(let i = 0;i<3;i++)
         }
         else if(i < cchoice || (!i && cchoice == 2))
         {
-            ans.innerText = `Computer choose ${hand[cchoice]} \nPlayer choose ${hand[i]} \nComputer Wins!!!`;
+            ans.innerText = `- Computer choose ${hand[cchoice]} \n- Player choose ${hand[i]} \nComputer Wins!!!`;
             compscore.innerText = `Computer : ${++comp}`;
         }
         else
         {
-            ans.innerText = `Computer choose ${hand[cchoice]} \nPlayer choose ${hand[i]} \nYou win!!!`;
+            ans.innerText = `- Computer choose ${hand[cchoice]} \n- Player choose ${hand[i]} \nPlayer win!!!`;
             humanscore.innerText =`Human : ${++human}`;
         }
     })

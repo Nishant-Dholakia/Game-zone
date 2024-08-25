@@ -13,18 +13,32 @@
 .allgames
 {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
-    margin: 5vh;
+    margin: 5vmin;
     justify-content: center;
 }
 
 .game
 {
-    height: 200px;
-    width: 200px;
+    height: 30vmin;
+    width: 30vmin;
+    object-fit: contain;
 }
 
 .game:hover
 {
     transform: scale(1.2);
+}
+@media screen and (max-width:300px) {
+    .game
+    {
+        height: 15vmin;
+        width: 15vmin;
+    }
+    .allgames
+    {
+        margin: 1vmin;
+    }
+    
 }

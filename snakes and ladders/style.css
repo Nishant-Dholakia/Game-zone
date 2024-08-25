@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 body
 {
@@ -13,58 +13,57 @@ body
 }
 .gameName
 {
-    width: 19%;
+    width: 50vw;
+    position: absolute;
+    top: 7vh;
+    left: 20vw;
+/* border: 1px solid; */
+    text-align: center;
     word-break:keep-all;
     text-decoration: underline;
     text-decoration-color: blueviolet;
-    position: absolute;
-    left: 5vw;
-    top: 20vh;
-    margin: 10px;
 }
 .gameend
 {
-    width: 19%;
+    width: 20%;
     word-break:keep-all;
     position: absolute;
     left: 5vw;
     top: 30vh;
-    margin: 10px;
+    /* margin: 10px; */
 }
-
 .turn
 {
     width: 19%;
     word-break:keep-all;
     position: absolute;
     left: 5vw;
-    top: 65vh;
-    margin: 10px;
-    font-size: x-large;
+    top:50vh;
+    /* margin: 10; */
+    font-size: larger;
 }
-
 .boardimg
 {
     /* margin-left: 25%; */
-    height: 700px;
-    width: 700px;
+    height: 80vmin;
+    width: 90vmin;
     position: absolute;
-    top: 3vh;
-    left: 30vw;
+    top: 15vh;
+    left: 27vw;
     border: 2px solid black;
 }
 .gridboard
 {
     border: 1px solid;
-    height: 700px;
-    width: 700px;
+    height: 80vmin;
+    width: 90vmin;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     gap: 0px;
     position: absolute;
-    top: 3vh;
-    left: 30vw;
+    top: 15vh;
+    left: 27vw;
     z-index: 1;
 }
 .box
@@ -80,10 +79,9 @@ body
     border: 2px solid ;
     height: 80px;
     width: 80px;
-    float: left;
     position: absolute;
-    bottom: 15vh;
-    left: 10vw;
+    top: 65vh;
+    left: 5vw;
     transition: transform 1s ease-in-out;
 }
 .dice
@@ -114,3 +112,33 @@ body
     transform: rotate(720deg) ;
 }
 
+@media screen and (max-width:500px) {
+    .gameName
+    {
+        top: 8vh;
+        font-size: larger;
+    }
+    .gameend
+    {
+        left:40%;
+        top: 30%;
+        /* color:darkblue; */
+    }
+    .turn
+    {
+        font-size: medium;
+        top: 75vh;
+        left: 30vw;
+    }
+    .roller
+    {
+        height: 60px;
+        width: 60px;
+        top: 75vh;
+        left: 60vw;
+    }
+    .boardimg,.gridboard
+    {
+        left: 5vw;
+    }
+}

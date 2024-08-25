@@ -186,12 +186,12 @@ roller.addEventListener('click', ()=>
     }
     
 });
-
+move1 = 100;
 setInterval(()=>
 {
-    if(move1 == 100)
+    if(move1 == 100 && gameend.innerText == '')
         gameend.innerText = `Hurray!!! Player-1 Wins the game...`;
-    else if(move2 == 100)
+    else if(move2 == 100 && gameend.innerText == '')
         gameend.innerText = `Hurray!!! Player-2 Wins the game...`;  
 },500);
 
