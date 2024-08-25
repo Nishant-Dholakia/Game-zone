@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snakes And Ladders</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../modestyle.css">
 </head>
 <body>
+    <div class="modemenu">
+
+        <div>Change Mode</div>
+        <div class="mode">
+            <div class="submode light"></div>
+            <div class="submode dark"></div>
+        </div>
+    </div>
     <h2 class="gameName">Snakes & Ladders</h2>
     <div class="gridboard">
         <div class="box" id="1"></div>
@@ -118,7 +127,8 @@
     <div class="turn">
         Turn : Player-1
     </div>
-    
+    <a href="./index.html" class="reset">Reset</a>
     <script src="./script.js"></script>
+    <script src="../screenMode.js"></script>
 </body>
 </html>

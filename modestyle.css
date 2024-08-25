@@ -1,12 +1,18 @@
 .light
 {
-    background-color: whitesmoke;
+    background-color: beige;
     color: black;
 }
 .dark
 {
     background-color: black;
     color: violet;
+}
+.modemenu
+{
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
 }
 .mode
 {

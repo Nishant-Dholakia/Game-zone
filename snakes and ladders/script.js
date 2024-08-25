@@ -186,7 +186,6 @@ roller.addEventListener('click', ()=>
     }
     
 });
-move1 = 100;
 setInterval(()=>
 {
     if(move1 == 100 && gameend.innerText == '')

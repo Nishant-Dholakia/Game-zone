@@ -1,4 +1,7 @@
-
+body
+{
+    background-color: beige;
+}
 .heading
 {
     width: 19%;
@@ -8,6 +11,7 @@
     text-decoration-color: blueviolet;
     color: blue;
     text-align: center;
+    font-style: italic;
 }
 
 .allgames
@@ -24,6 +28,8 @@
     height: 30vmin;
     width: 30vmin;
     object-fit: contain;
+    border-radius: 50%;
+    border: 1px solid;
 }
 
 .game:hover
@@ -33,12 +39,13 @@
 @media screen and (max-width:300px) {
     .game
     {
-        height: 15vmin;
-        width: 15vmin;
+        height: 20vmin;
+        width: 20vmin;
     }
     .allgames
     {
         margin: 1vmin;
+        width: 40vmin;
     }
     
 }

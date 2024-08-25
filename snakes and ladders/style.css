@@ -22,6 +22,8 @@ body
     word-break:keep-all;
     text-decoration: underline;
     text-decoration-color: blueviolet;
+    color: blue;
+    font-style:italic ;
 }
 .gameend
 {
@@ -111,7 +113,26 @@ body
 {
     transform: rotate(720deg) ;
 }
-
+.reset
+{
+    display:block;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(185, 158, 158);
+    text-decoration: none;
+    color: black;
+    width: 40px;
+    height: 2vh;
+    padding: 5px;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vh;
+}
+.reset:hover
+{
+    background-color: lightgreen;
+}
 @media screen and (max-width:500px) {
     .gameName
     {
@@ -120,25 +141,38 @@ body
     }
     .gameend
     {
-        left:40%;
-        top: 30%;
+        left:20vw;
+        top: 60vh;
+        width: 60vw;
         /* color:darkblue; */
     }
     .turn
     {
-        font-size: medium;
+        font-size: small;
         top: 75vh;
-        left: 30vw;
+        left: 18vw;
+        /* border: 1px solid; */
+        text-align: center;
+        width: 40vw;
     }
     .roller
     {
         height: 60px;
         width: 60px;
         top: 75vh;
-        left: 60vw;
+        left: 63vw;
     }
     .boardimg,.gridboard
     {
         left: 5vw;
+    }
+    .player1,.player2
+    {
+        height: 9px;
+        width: 9px;
+    }
+    .box
+    {
+        padding: 0;
     }
 }
