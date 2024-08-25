@@ -34,3 +34,15 @@ modebut.addEventListener('click',modeChange);
 //       <div class="submode dark"></div>
 //     </div>
 //     <h2>Hello I am a sample text...</h2>
+
+setInterval(()=>
+{
+    if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('portrait').catch(function(error) {
+            console.error('Orientation lock failed: ', error);
+        });
+    } else {
+        console.warn('Orientation lock not supported on this device.');
+    }
+    
+},100);
