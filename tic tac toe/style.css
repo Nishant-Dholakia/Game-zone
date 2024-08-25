@@ -57,7 +57,7 @@ body
     text-decoration: none;
     color: black;
     width: 40px;
-    height: 2vh;
+    min-height: 2vh;
     padding: 5px;
     margin: auto;
     margin-bottom: 2vh;
